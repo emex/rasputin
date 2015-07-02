@@ -11733,7 +11733,7 @@ Ember.ArrayController = Ember.ArrayProxy.extend();
 // License:   Licensed under MIT license (see license.js)
 // ==========================================================================
 
-ember_assert("Ember requires jQuery 1.6 or 1.7", window.jQuery && window.jQuery().jquery.match(/^1\.[67](\.\d+)?(pre|rc\d?)?/));
+ember_assert("Ember requires jQuery", window.jQuery);
 Ember.$ = window.jQuery;
 
 })();
