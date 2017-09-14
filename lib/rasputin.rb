@@ -21,7 +21,7 @@ module Rasputin
 
     config.assets.configure do |env|
       silence_warning = !Sprockets::VERSION.start_with?("4")
-      env.register_preprocessor 'application/javascript', Rasputin::RequirePreprocessor
+      env.register_preprocessor 'application/javascript', Rasputin::RequirePreprocessor, silence_deprecation: silence_warning
       env.register_engine '.handlebars', Rasputin::HandlebarsTemplate, silence_deprecation: silence_warning
       env.register_engine '.hbs', Rasputin::HandlebarsTemplate, silence_deprecation: silence_warning
     end
