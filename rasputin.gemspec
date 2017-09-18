@@ -12,9 +12,9 @@ Gem::Specification.new do |s|
   s.description = %q{Ember.js for the Rails asset pipeline.}
 
   s.rubyforge_project = "rasputin"
-  s.add_runtime_dependency 'railties', '~> 4.2'
-  s.add_runtime_dependency 'actionpack', '~> 4.2'
-  s.add_runtime_dependency 'sprockets', '~> 2.2'
+  s.add_runtime_dependency 'railties', '>= 3.1', '< 5.2'
+  s.add_runtime_dependency 'actionpack', '>= 3.1', '< 5.2'
+  s.add_runtime_dependency 'sprockets'
   s.add_runtime_dependency 'jquery-rails'
 
   s.files         = `git ls-files`.split("\n")
